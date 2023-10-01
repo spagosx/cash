@@ -8,7 +8,8 @@
 import Foundation
 import Combine
 
-func cashSideEffects(service: CashService) -> SideEffect<CashState, CashAction> {
+// TODO: turning this into a struct with a handle(state: action:) func might be nicer and easier to test
+func cashSideEffects(service: Service) -> SideEffect<CashState, CashAction> {
     return {  state, action in
         
         switch action {
@@ -20,6 +21,6 @@ func cashSideEffects(service: CashService) -> SideEffect<CashState, CashAction> 
         default:
             break
         }
-        return Empty().eraseToAnyPublisher()
+        return Empty().eraseToAnyPublisher() // TODO: return nil and use a flatmap in the Store
     }
 }

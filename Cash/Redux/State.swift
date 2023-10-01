@@ -17,3 +17,7 @@ struct Expense: Identifiable {
     let name: String
     let value: Double
 }
+
+#if DEBUG
+extension Expense: Equatable {} // for unit tests only
+#endif

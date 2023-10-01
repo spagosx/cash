@@ -8,7 +8,11 @@
 import Foundation
 import Combine
 
-struct CashService {
+protocol Service {
+    func retrieveExpenses() -> AnyPublisher<[Expense], Never>
+}
+
+struct CashService: Service {
     func retrieveExpenses() -> AnyPublisher<[Expense], Never> {
         return Future<[Expense], Never> { promise in
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

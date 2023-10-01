@@ -11,7 +11,7 @@
 		921158202AC99ADF0076D465 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211581F2AC99ADF0076D465 /* ContentView.swift */; };
 		921158222AC99AE00076D465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921158212AC99AE00076D465 /* Assets.xcassets */; };
 		921158252AC99AE00076D465 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921158242AC99AE00076D465 /* Preview Assets.xcassets */; };
-		9211582F2AC99AE10076D465 /* CashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211582E2AC99AE10076D465 /* CashTests.swift */; };
+		9211582F2AC99AE10076D465 /* CashReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211582E2AC99AE10076D465 /* CashReducerTests.swift */; };
 		921158392AC99AE10076D465 /* CashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921158382AC99AE10076D465 /* CashUITests.swift */; };
 		9211583B2AC99AE10076D465 /* CashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211583A2AC99AE10076D465 /* CashUITestsLaunchTests.swift */; };
 		921158492AC99B170076D465 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921158482AC99B170076D465 /* Store.swift */; };
@@ -20,6 +20,7 @@
 		9211584F2AC99B2B0076D465 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211584E2AC99B2B0076D465 /* Actions.swift */; };
 		921158512AC9BFDC0076D465 /* CashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921158502AC9BFDC0076D465 /* CashService.swift */; };
 		921158532AC9C1BF0076D465 /* SideEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921158522AC9C1BF0076D465 /* SideEffects.swift */; };
+		921158572AC9D14D0076D465 /* CashSideEffectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921158562AC9D14D0076D465 /* CashSideEffectsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,7 @@
 		921158212AC99AE00076D465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		921158242AC99AE00076D465 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9211582A2AC99AE10076D465 /* CashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9211582E2AC99AE10076D465 /* CashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTests.swift; sourceTree = "<group>"; };
+		9211582E2AC99AE10076D465 /* CashReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashReducerTests.swift; sourceTree = "<group>"; };
 		921158342AC99AE10076D465 /* CashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		921158382AC99AE10076D465 /* CashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashUITests.swift; sourceTree = "<group>"; };
 		9211583A2AC99AE10076D465 /* CashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		9211584E2AC99B2B0076D465 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		921158502AC9BFDC0076D465 /* CashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashService.swift; sourceTree = "<group>"; };
 		921158522AC9C1BF0076D465 /* SideEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffects.swift; sourceTree = "<group>"; };
+		921158562AC9D14D0076D465 /* CashSideEffectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashSideEffectsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,8 @@
 		9211582D2AC99AE10076D465 /* CashTests */ = {
 			isa = PBXGroup;
 			children = (
-				9211582E2AC99AE10076D465 /* CashTests.swift */,
+				9211582E2AC99AE10076D465 /* CashReducerTests.swift */,
+				921158562AC9D14D0076D465 /* CashSideEffectsTests.swift */,
 			);
 			path = CashTests;
 			sourceTree = "<group>";
@@ -298,7 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9211582F2AC99AE10076D465 /* CashTests.swift in Sources */,
+				921158572AC9D14D0076D465 /* CashSideEffectsTests.swift in Sources */,
+				9211582F2AC99AE10076D465 /* CashReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

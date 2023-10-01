@@ -9,6 +9,7 @@ import Foundation
 
 typealias Reducer<State, Action> = (inout State, Action) -> Void
 
+// TODO: remove the inout and return a fresh State instead
 func cashReducer(state: inout CashState, action: CashAction) {
     switch action {
     case .addExpense(let expense):
