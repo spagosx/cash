@@ -11,8 +11,9 @@ import SwiftUI
 struct CashApp: App {
     var body: some Scene {
         WindowGroup {
-            let store = CashStore(initialState: CashState(expenses: [Expense(name: "mortgage", value: 1000)]),
-                                  reducer: cashReducer)
+            let store = CashStore(initialState: CashState(),
+                                  reducer: cashReducer,
+                                  sideEffects: [cashSideEffects(service: CashService())])
             ContentView().environmentObject(store)
         }
     }

@@ -9,18 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var store: CashStore
+        
     var body: some View {
         VStack {
-            List(store.state.expenses) { expense in
-                HStack {
-                    Text("\(expense.name)")
-                    Text("\(expense.value)")
+            if store.state.loading {
+                ProgressView()
+                    .progressViewStyle(.circular)
+            } else {
+                List(store.state.expenses) { expense in
+                    HStack {
+                        Text("\(expense.name)")
+                        Text("\(expense.value)")
+                    }
+                }
+                .padding()
+                Button("Add Expense") {
+                    store.dispatch(.addExpense(Expense(name: "New Expense", value: 100)))
                 }
             }
-            .padding()
-            Button("Add Expense") {
-                store.dispatch(.addExpense(Expense(name: "New Expense", value: 100)))
-            }
+        }
+        .onAppear {
+            store.dispatch(.fetchExpenses) // TODO: introduce container views and move this upstream
         }
     }
 }

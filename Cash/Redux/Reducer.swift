@@ -11,7 +11,12 @@ typealias Reducer<State, Action> = (inout State, Action) -> Void
 
 func cashReducer(state: inout CashState, action: CashAction) {
     switch action {
-        case .addExpense(let expense):
+    case .addExpense(let expense):
         state.expenses.append(expense)
+    case .expensesFetched(let expenses):
+        state.expenses = expenses
+        state.loading = false
+    case .fetchExpenses:
+        state.loading = true
     }
 }

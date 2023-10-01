@@ -18,6 +18,8 @@
 		9211584B2AC99B1E0076D465 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211584A2AC99B1E0076D465 /* State.swift */; };
 		9211584D2AC99B260076D465 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211584C2AC99B260076D465 /* Reducer.swift */; };
 		9211584F2AC99B2B0076D465 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211584E2AC99B2B0076D465 /* Actions.swift */; };
+		921158512AC9BFDC0076D465 /* CashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921158502AC9BFDC0076D465 /* CashService.swift */; };
+		921158532AC9C1BF0076D465 /* SideEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921158522AC9C1BF0076D465 /* SideEffects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		9211584A2AC99B1E0076D465 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		9211584C2AC99B260076D465 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		9211584E2AC99B2B0076D465 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		921158502AC9BFDC0076D465 /* CashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashService.swift; sourceTree = "<group>"; };
+		921158522AC9C1BF0076D465 /* SideEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				9211584A2AC99B1E0076D465 /* State.swift */,
 				9211584C2AC99B260076D465 /* Reducer.swift */,
 				9211584E2AC99B2B0076D465 /* Actions.swift */,
+				921158522AC9C1BF0076D465 /* SideEffects.swift */,
+				921158502AC9BFDC0076D465 /* CashService.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -278,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				921158492AC99B170076D465 /* Store.swift in Sources */,
+				921158532AC9C1BF0076D465 /* SideEffects.swift in Sources */,
 				9211584F2AC99B2B0076D465 /* Actions.swift in Sources */,
 				921158202AC99ADF0076D465 /* ContentView.swift in Sources */,
+				921158512AC9BFDC0076D465 /* CashService.swift in Sources */,
 				9211581E2AC99ADF0076D465 /* CashApp.swift in Sources */,
 				9211584D2AC99B260076D465 /* Reducer.swift in Sources */,
 				9211584B2AC99B1E0076D465 /* State.swift in Sources */,

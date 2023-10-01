@@ -8,7 +8,8 @@
 import Foundation
 
 struct CashState {
-    var expenses: [Expense]
+    var expenses: [Expense] = []
+    var loading = false
 }
 
 struct Expense: Identifiable {
